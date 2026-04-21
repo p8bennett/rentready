@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LandlordCalc — Free Property Management Calculators</title>
+  <title>RentReady — Free Property Management Calculators</title>
   <meta name="description" content="Free calculators for independent landlords. Cap rate, security deposit limits by state, and rent increase tools — no account required." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -752,7 +752,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo" onclick="showSection('home')">Landlord<span>Calc</span></div>
+  <div class="nav-logo" onclick="showSection('home')">Rent<span>Ready</span></div>
   <div class="nav-links">
     <button class="nav-btn" onclick="showSection('caprate')">Cap Rate</button>
     <button class="nav-btn" onclick="showSection('deposit')">Security Deposit</button>
@@ -1130,7 +1130,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Landlord<span>Calc</span></div>
+  <div class="footer-logo">Rent<span>Ready</span></div>
   <div class="footer-links">
     <button class="footer-link" onclick="showSection('caprate')">Cap Rate Calculator</button>
     <button class="footer-link" onclick="showSection('deposit')">Security Deposit Calculator</button>
@@ -1469,9 +1469,9 @@
       return;
     }
 
-    const saved = JSON.parse(localStorage.getItem('lc_emails') || '[]');
+    const saved = JSON.parse(localStorage.getItem('rr_emails') || '[]');
     saved.push({ email, source: prefix, ts: new Date().toISOString() });
-    localStorage.setItem('lc_emails', JSON.stringify(saved));
+    localStorage.setItem('rr_emails', JSON.stringify(saved));
 
     console.log('Email captured:', { email, source: prefix });
 
