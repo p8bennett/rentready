@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rental Property Tax Deductions: The Schedule E Guide for Landlords | RentReady</title>
+  <meta name="description" content="A complete guide to Schedule E rental property tax deductions. Learn what landlords can deduct, how to track expenses, and how to prepare for tax season." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --cream: #F7F3EE; --paper: #FDFAF6; --ink: #1A1714; --ink-mid: #4A4340; --ink-soft: #8C8077; --amber: #C8832A; --amber-lt: #F0C070; --amber-bg: #FDF3E0; --navy: #1C2B3A; --border: #E2D9CF; --green-lt: #E8F5EE; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.7; }
+    nav { background: var(--navy); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.25rem; color: #fff; text-decoration: none; }
+    .nav-logo span { color: var(--amber-lt); }
+    .nav-links { display: flex; gap: 6px; }
+    .nav-btn { color: rgba(255,255,255,0.65); font-size: 0.82rem; font-weight: 500; padding: 6px 12px; border-radius: 6px; text-decoration: none; transition: all 0.2s; }
+    .nav-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
+    .article-hero { background: var(--navy); padding: 56px 24px; text-align: center; }
+    .article-tag { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--amber-lt); margin-bottom: 16px; padding: 5px 12px; border: 1px solid rgba(200,131,42,0.3); border-radius: 100px; }
+    .article-hero h1 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(1.75rem, 4vw, 2.75rem); color: #fff; line-height: 1.2; max-width: 720px; margin: 0 auto 16px; }
+    .article-hero .meta { color: rgba(255,255,255,0.45); font-size: 0.8rem; }
+    .article-wrap { max-width: 720px; margin: 0 auto; padding: 52px 24px 80px; }
+    .article-wrap h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--ink); margin: 40px 0 14px; }
+    .article-wrap h3 { font-size: 1.05rem; font-weight: 600; color: var(--ink); margin: 28px 0 10px; }
+    .article-wrap p { font-size: 0.97rem; color: var(--ink-mid); margin-bottom: 18px; line-height: 1.8; }
+    .article-wrap ul, .article-wrap ol { margin: 0 0 18px 22px; }
+    .article-wrap li { font-size: 0.97rem; color: var(--ink-mid); margin-bottom: 8px; line-height: 1.7; }
+    .article-wrap strong { color: var(--ink); font-weight: 600; }
+    .cta-box { background: var(--navy); border-radius: 16px; padding: 28px 32px; margin: 36px 0; display: flex; flex-direction: column; gap: 14px; }
+    .cta-box h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #fff; margin: 0; }
+    .cta-box p { color: rgba(255,255,255,0.6); font-size: 0.88rem; margin: 0; }
+    .cta-btn { display: inline-block; padding: 13px 24px; background: var(--amber); color: #fff; border-radius: 10px; font-weight: 600; font-size: 0.9rem; text-decoration: none; align-self: flex-start; transition: all 0.2s; }
+    .cta-btn:hover { background: #B5731E; }
+    .callout { background: var(--amber-bg); border-left: 4px solid var(--amber); border-radius: 0 10px 10px 0; padding: 18px 22px; margin: 28px 0; }
+    .callout p { margin: 0; font-size: 0.9rem; color: var(--ink-mid); }
+    .deduction-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 24px 0; }
+    .deduction-item { background: var(--paper); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; }
+    .deduction-item .icon { font-size: 1.2rem; margin-bottom: 8px; }
+    .deduction-item h4 { font-size: 0.88rem; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+    .deduction-item p { font-size: 0.8rem; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+    .yes-no-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.88rem; border-radius: 12px; overflow: hidden; }
+    .yes-no-table th { background: var(--navy); color: #fff; padding: 11px 14px; text-align: left; font-weight: 600; font-size: 0.78rem; }
+    .yes-no-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--ink-mid); background: var(--paper); }
+    .yes-no-table tr:last-child td { border-bottom: none; }
+    .yes { color: #2A6B4A; font-weight: 600; }
+    .no { color: #B84040; font-weight: 600; }
+    .article-nav { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
+    .article-link { display: flex; align-items: center; gap: 8px; padding: 12px 18px; background: var(--paper); border: 1px solid var(--border); border-radius: 10px; font-size: 0.82rem; font-weight: 500; color: var(--ink-mid); text-decoration: none; transition: all 0.2s; }
+    .article-link:hover { border-color: var(--amber); color: var(--amber); background: var(--amber-bg); }
+    footer { background: var(--ink); padding: 40px 24px; text-align: center; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.2rem; color: #fff; margin-bottom: 16px; }
+    .footer-logo span { color: var(--amber-lt); }
+    .footer-links { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+    .footer-link { color: rgba(255,255,255,0.6); padding: 7px 14px; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; font-size: 0.8rem; text-decoration: none; }
+    .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+    @media (max-width: 600px) { .article-wrap { padding: 32px 16px 60px; } .nav-btn { font-size: 0.72rem; padding: 6px 8px; } .deduction-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/index.html">Rent<span>Ready</span></a>
+  <div class="nav-links">
+    <a class="nav-btn" href="/index.html">Calculators</a>
+    <a class="nav-btn" href="/cap-rate-guide.html">Cap Rate</a>
+    <a class="nav-btn" href="/security-deposit-laws.html">Deposits</a>
+  </div>
+</nav>
+
+<div class="article-hero">
+  <div class="article-tag">Landlord Taxes</div>
+  <h1>Rental Property Tax Deductions: The Schedule E Guide for Landlords</h1>
+  <div class="meta">By RentReady · Tax Planning Guide</div>
+</div>
+
+<div class="article-wrap">
+
+  <p>Schedule E is the IRS form where landlords report rental income and expenses. It's also where most independent landlords either save significant money — or leave it on the table because they didn't know what was deductible. This guide covers everything you can legally deduct as a rental property owner and how to stay organized throughout the year so tax season isn't a scramble.</p>
+
+  <div class="callout">
+    <p><strong>This is general tax information, not tax advice.</strong> Your specific situation may differ. Always consult a CPA or tax professional who works with real estate investors before filing.</p>
+  </div>
+
+  <h2>What Is Schedule E?</h2>
+  <p>Schedule E (Supplemental Income and Loss) is the IRS form attached to your personal Form 1040 that reports income and expenses from rental properties. Each property gets its own column on Schedule E, and the net result — profit or loss — flows to your personal income tax return.</p>
+  <p>Rental income is generally considered passive income, which means losses are typically limited to $25,000 per year (and only if your adjusted gross income is under $100,000). This passive activity loss rule is one of the most misunderstood aspects of rental property taxation — a good reason to have a CPA on your side.</p>
+
+  <h2>What Landlords Can Deduct on Schedule E</h2>
+
+  <div class="deduction-grid">
+    <div class="deduction-item">
+      <div class="icon">🏠</div>
+      <h4>Mortgage Interest</h4>
+      <p>The interest portion of your mortgage payment — typically the largest deduction for leveraged landlords.</p>
+    </div>
+    <div class="deduction-item">
+      <div class="icon">📋</div>
+      <h4>Property Taxes</h4>
+      <p>Real estate taxes paid to your state or local government during the tax year.</p>
+    </div>
+    <div class="deduction-item">
+      <div class="icon">🛡️</div>
+      <h4>Landlord Insurance</h4>
+      <p>Premiums for your rental property insurance policy. Homeowner's insurance on your primary residence is not deductible here.</p>
+    </div>
+    <div class="deduction-item">
+      <div class="icon">🔧</div>
+      <h4>Repairs & Maintenance</h4>
+      <p>Fixing a leaky faucet, repainting, replacing a broken window. Repairs are fully deductible in the year incurred.</p>
+    </div>
+    <div class="deduction-item">
+      <div class="icon">👷</div>
+      <h4>Property Management</h4>
+      <p>Fees paid to a property manager or management company, typically 8–12% of collected rent.</p>
+    </div>
+    <div class="deduction-item">
+      <div class="icon">📢</div>
+      <h4>Advertising</h4>
+      <p>Listing fees, photography, signage, and any other costs to market a vacant unit.</p>
+    </div>
+    <div class="deduction-item">
+      <div class="icon">⚖️</div>
+      <h4>Professional Fees</h4>
+      <p>Attorney fees for lease drafting or eviction, CPA fees for rental tax preparation, and similar professional services.</p>
+    </div>
+    <div class="deduction-item">
+      <div class="icon">🚗</div>
+      <h4>Travel & Mileage</h4>
+      <p>Mileage driven to the property for repairs, inspections, or tenant meetings. Keep a mileage log.</p>
+    </div>
+  </div>
+
+  <h2>Repairs vs. Improvements: A Critical Distinction</h2>
+  <p>This is the single most common point of confusion in rental property taxes. The IRS treats repairs and improvements very differently.</p>
+  <p><strong>Repairs</strong> restore the property to its original working condition. They're fully deductible in the year you pay for them. Fixing a broken HVAC unit, patching a roof leak, replacing a broken door — these are repairs.</p>
+  <p><strong>Improvements</strong> add value or extend the useful life of the property. They must be depreciated over time rather than deducted all at once. Adding a new HVAC system where there wasn't one, replacing an entire roof, renovating a kitchen — these are improvements.</p>
+  <p>In practice, the line can be blurry. A CPA familiar with real estate can help you categorize expenses correctly and potentially use Section 179 or bonus depreciation to accelerate deductions on some improvements.</p>
+
+  <h2>Depreciation: The Silent Deduction</h2>
+  <p>Depreciation is often the largest deduction a landlord takes — and the one most beginners don't claim correctly. The IRS assumes residential rental property wears out over 27.5 years. That means you can deduct 1/27.5th of the building's value (not the land) each year, regardless of whether the property actually declines in value.</p>
+  <p>On a $300,000 property where $250,000 is allocated to the structure (not land), your annual depreciation deduction is approximately $9,090 — completely reducing taxable income without any cash outlay.</p>
+
+  <div class="callout">
+    <p><strong>Important:</strong> When you sell the property, the IRS "recaptures" depreciation deductions at a special 25% rate. This is called depreciation recapture and is a key reason to work with a tax professional when selling a rental property.</p>
+  </div>
+
+  <h2>What Landlords Cannot Deduct</h2>
+  <table class="yes-no-table">
+    <thead>
+      <tr><th>Item</th><th>Deductible?</th><th>Notes</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Mortgage principal</td><td class="no">No</td><td>Only interest is deductible</td></tr>
+      <tr><td>Personal use portion</td><td class="no">No</td><td>Must allocate if you use the property personally</td></tr>
+      <tr><td>Land value</td><td class="no">No</td><td>Only the structure depreciates</td></tr>
+      <tr><td>Capital improvements</td><td class="no">Not immediately</td><td>Must be depreciated over time</td></tr>
+      <tr><td>Repairs (deductible year paid)</td><td class="yes">Yes</td><td>Keep all receipts</td></tr>
+      <tr><td>Travel to manage properties</td><td class="yes">Yes</td><td>Mileage log required</td></tr>
+      <tr><td>Home office (if used exclusively for rentals)</td><td class="yes">Possibly</td><td>Strict IRS rules apply</td></tr>
+    </tbody>
+  </table>
+
+  <h2>How to Stay Organized All Year</h2>
+  <p>The landlords who pay the least in taxes are the ones who track expenses consistently — not the ones who scramble every April. A simple system goes a long way:</p>
+  <ul>
+    <li><strong>Separate bank account</strong> — run all rental income and expenses through a dedicated account</li>
+    <li><strong>Track every expense at the time it occurs</strong> — not three months later from memory</li>
+    <li><strong>Save every receipt</strong> — even small ones; they add up and they protect you in an audit</li>
+    <li><strong>Log every mile driven</strong> for property-related purposes</li>
+    <li><strong>Categorize expenses monthly</strong> — don't let 12 months pile up in January</li>
+  </ul>
+  <p>The goal is a clean income and expense summary per property that you can hand to your CPA at year-end. The less time they spend organizing your records, the less you pay them — and the fewer deductions get missed.</p>
+
+  <div class="cta-box">
+    <h3>Track rental income and expenses — coming soon to RentReady Pro</h3>
+    <p>Our Pro tier will include per-property income and expense tracking with a Schedule E summary export ready for your accountant. Join the list to be notified at launch.</p>
+    <a class="cta-btn" href="/index.html">Get Early Access →</a>
+  </div>
+
+  <div class="article-nav">
+    <a class="article-link" href="/cap-rate-guide.html">📊 What Is a Good Cap Rate?</a>
+    <a class="article-link" href="/security-deposit-laws.html">🔒 Security Deposit Laws by State</a>
+    <a class="article-link" href="/how-to-raise-rent.html">📈 How to Raise Rent Legally</a>
+    <a class="article-link" href="/how-to-screen-a-tenant.html">👤 How to Screen a Tenant</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Rent<span>Ready</span></div>
+  <div class="footer-links">
+    <a class="footer-link" href="/index.html">Cap Rate Calculator</a>
+    <a class="footer-link" href="/index.html">Security Deposit Calculator</a>
+    <a class="footer-link" href="/index.html">Rent Increase Calculator</a>
+  </div>
+  <div class="footer-copy">Free tools for independent landlords. Not tax or legal advice. Consult a CPA for your specific situation.</div>
+</footer>
+</body>
+</html>

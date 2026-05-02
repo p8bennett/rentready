@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security Deposit Laws by State: The Complete Landlord Guide | RentReady</title>
+  <meta name="description" content="A plain-English guide to security deposit limits, return deadlines, and interest requirements in every covered state. Updated for landlords managing 1–50 units." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --cream: #F7F3EE; --paper: #FDFAF6; --ink: #1A1714; --ink-mid: #4A4340; --ink-soft: #8C8077; --amber: #C8832A; --amber-lt: #F0C070; --amber-bg: #FDF3E0; --navy: #1C2B3A; --border: #E2D9CF; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.7; }
+    nav { background: var(--navy); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.25rem; color: #fff; text-decoration: none; }
+    .nav-logo span { color: var(--amber-lt); }
+    .nav-links { display: flex; gap: 6px; }
+    .nav-btn { color: rgba(255,255,255,0.65); font-size: 0.82rem; font-weight: 500; padding: 6px 12px; border-radius: 6px; text-decoration: none; transition: all 0.2s; }
+    .nav-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
+    .article-hero { background: var(--navy); padding: 56px 24px; text-align: center; }
+    .article-tag { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--amber-lt); margin-bottom: 16px; padding: 5px 12px; border: 1px solid rgba(200,131,42,0.3); border-radius: 100px; }
+    .article-hero h1 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(1.75rem, 4vw, 2.75rem); color: #fff; line-height: 1.2; max-width: 720px; margin: 0 auto 16px; }
+    .article-hero .meta { color: rgba(255,255,255,0.45); font-size: 0.8rem; }
+    .article-wrap { max-width: 720px; margin: 0 auto; padding: 52px 24px 80px; }
+    .article-wrap h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--ink); margin: 40px 0 14px; }
+    .article-wrap h3 { font-size: 1.05rem; font-weight: 600; color: var(--ink); margin: 28px 0 10px; }
+    .article-wrap p { font-size: 0.97rem; color: var(--ink-mid); margin-bottom: 18px; line-height: 1.8; }
+    .article-wrap ul { margin: 0 0 18px 22px; }
+    .article-wrap li { font-size: 0.97rem; color: var(--ink-mid); margin-bottom: 8px; line-height: 1.7; }
+    .article-wrap strong { color: var(--ink); font-weight: 600; }
+    .cta-box { background: var(--navy); border-radius: 16px; padding: 28px 32px; margin: 36px 0; display: flex; flex-direction: column; gap: 14px; }
+    .cta-box h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #fff; margin: 0; }
+    .cta-box p { color: rgba(255,255,255,0.6); font-size: 0.88rem; margin: 0; }
+    .cta-btn { display: inline-block; padding: 13px 24px; background: var(--amber); color: #fff; border-radius: 10px; font-weight: 600; font-size: 0.9rem; text-decoration: none; align-self: flex-start; transition: all 0.2s; }
+    .cta-btn:hover { background: #B5731E; }
+    .callout { background: var(--amber-bg); border-left: 4px solid var(--amber); border-radius: 0 10px 10px 0; padding: 18px 22px; margin: 28px 0; }
+    .callout p { margin: 0; font-size: 0.9rem; color: var(--ink-mid); }
+    .state-block { background: var(--paper); border: 1px solid var(--border); border-radius: 14px; padding: 22px 24px; margin: 20px 0; }
+    .state-block h3 { font-size: 1rem; font-weight: 700; color: var(--ink); margin: 0 0 12px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+    .state-row { display: flex; justify-content: space-between; font-size: 0.85rem; padding: 6px 0; border-bottom: 1px solid var(--border); gap: 12px; }
+    .state-row:last-of-type { border-bottom: none; }
+    .state-label { color: var(--ink-soft); flex-shrink: 0; }
+    .state-val { color: var(--ink); font-weight: 500; text-align: right; }
+    .state-note { font-size: 0.78rem; color: var(--ink-soft); margin-top: 10px; font-style: italic; }
+    .data-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.85rem; border-radius: 12px; overflow: hidden; }
+    .data-table th { background: var(--navy); color: #fff; padding: 11px 14px; text-align: left; font-weight: 600; font-size: 0.78rem; }
+    .data-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--ink-mid); background: var(--paper); }
+    .data-table tr:last-child td { border-bottom: none; }
+    .article-nav { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
+    .article-link { display: flex; align-items: center; gap: 8px; padding: 12px 18px; background: var(--paper); border: 1px solid var(--border); border-radius: 10px; font-size: 0.82rem; font-weight: 500; color: var(--ink-mid); text-decoration: none; transition: all 0.2s; }
+    .article-link:hover { border-color: var(--amber); color: var(--amber); background: var(--amber-bg); }
+    footer { background: var(--ink); padding: 40px 24px; text-align: center; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.2rem; color: #fff; margin-bottom: 16px; }
+    .footer-logo span { color: var(--amber-lt); }
+    .footer-links { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+    .footer-link { color: rgba(255,255,255,0.6); padding: 7px 14px; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; font-size: 0.8rem; text-decoration: none; }
+    .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+    @media (max-width: 600px) { .article-wrap { padding: 32px 16px 60px; } .nav-btn { font-size: 0.72rem; padding: 6px 8px; } .state-row { flex-direction: column; gap: 2px; } .state-val { text-align: left; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/index.html">Rent<span>Ready</span></a>
+  <div class="nav-links">
+    <a class="nav-btn" href="/index.html">Calculators</a>
+    <a class="nav-btn" href="/cap-rate-guide.html">Cap Rate</a>
+    <a class="nav-btn" href="/how-to-raise-rent.html">Rent Increase</a>
+  </div>
+</nav>
+
+<div class="article-hero">
+  <div class="article-tag">Landlord-Tenant Law</div>
+  <h1>Security Deposit Laws by State: The Complete Landlord Guide</h1>
+  <div class="meta">By RentReady · State Law Reference</div>
+</div>
+
+<div class="article-wrap">
+
+  <p>Security deposit rules are entirely state-governed, which means the rules in Massachusetts are completely different from the rules in Texas. Getting this wrong — even accidentally — can cost you the right to keep any portion of the deposit and expose you to double or triple damages in some states. This guide covers the key rules for 12 states in plain English.</p>
+
+  <div class="cta-box">
+    <h3>Calculate your state's security deposit limit instantly</h3>
+    <p>Enter your monthly rent and select your state to see the legal maximum, return deadline, and interest requirements.</p>
+    <a class="cta-btn" href="/index.html">Use the Calculator →</a>
+  </div>
+
+  <h2>The Three Rules Every Landlord Must Know</h2>
+  <p>Regardless of your state, three rules apply almost universally. Miss any one of them and you risk losing your deposit rights entirely.</p>
+  <ul>
+    <li><strong>Charge only what's legal.</strong> Many states cap the deposit at one or two months' rent. Charging more than the legal maximum is a violation even if the tenant agrees to it in writing.</li>
+    <li><strong>Return it on time.</strong> Every state has a strict deadline — ranging from 14 days to 45 days after move-out. Missing it by even one day in some states eliminates your right to make any deductions.</li>
+    <li><strong>Provide an itemized statement.</strong> Most states require a written list of any deductions. A vague "cleaning fee" won't hold up. Specificity — "carpet cleaning, unit 2B, $180" — is what the law requires.</li>
+  </ul>
+
+  <h2>State-by-State Reference</h2>
+
+  <div class="state-block">
+    <h3>Massachusetts</h3>
+    <div class="state-row"><span class="state-label">Maximum deposit</span><span class="state-val">1× monthly rent</span></div>
+    <div class="state-row"><span class="state-label">Return deadline</span><span class="state-val">30 days after move-out</span></div>
+    <div class="state-row"><span class="state-label">Interest required</span><span class="state-val">Yes — 5% annually or bank rate</span></div>
+    <div class="state-row"><span class="state-label">Statute</span><span class="state-val">Mass. Gen. Laws ch. 186 § 15B</span></div>
+    <p class="state-note">Massachusetts has some of the strictest deposit laws in the country. The deposit must be held in a separate, interest-bearing Massachusetts bank account. Interest must be paid to the tenant annually or credited toward rent. Failure to comply gives the tenant the right to deduct the interest directly from rent — and willful violations can result in damages of three months' rent plus attorney fees.</p>
+  </div>
+
+  <div class="state-block">
+    <h3>Connecticut</h3>
+    <div class="state-row"><span class="state-label">Maximum deposit</span><span class="state-val">2× monthly rent (under 62) / 1× (age 62+)</span></div>
+    <div class="state-row"><span class="state-label">Return deadline</span><span class="state-val">30 days after move-out</span></div>
+    <div class="state-row"><span class="state-label">Interest required</span><span class="state-val">Yes — average savings deposit rate</span></div>
+    <div class="state-row"><span class="state-label">Statute</span><span class="state-val">Conn. Gen. Stat. § 47a-21</span></div>
+    <p class="state-note">Connecticut's age-based rule is unique — tenants 62 or older are protected by a lower cap. Interest accrues annually and must be paid to the tenant each year or applied as a rent credit. If the landlord fails to pay interest, the tenant may legally deduct it from rent.</p>
+  </div>
+
+  <div class="state-block">
+    <h3>New York</h3>
+    <div class="state-row"><span class="state-label">Maximum deposit</span><span class="state-val">1× monthly rent</span></div>
+    <div class="state-row"><span class="state-label">Return deadline</span><span class="state-val">14 days after move-out</span></div>
+    <div class="state-row"><span class="state-label">Interest required</span><span class="state-val">Yes — buildings with 6+ units</span></div>
+    <div class="state-row"><span class="state-label">Statute</span><span class="state-val">N.Y. Gen. Oblig. Law § 7-108</span></div>
+    <p class="state-note">New York's 14-day return deadline is one of the shortest in the country. Landlords must provide an itemized statement of deductions within that window or forfeit the right to keep any portion of the deposit.</p>
+  </div>
+
+  <div class="state-block">
+    <h3>California</h3>
+    <div class="state-row"><span class="state-label">Maximum deposit</span><span class="state-val">2× monthly rent (unfurnished)</span></div>
+    <div class="state-row"><span class="state-label">Return deadline</span><span class="state-val">21 days after move-out</span></div>
+    <div class="state-row"><span class="state-label">Interest required</span><span class="state-val">No</span></div>
+    <div class="state-row"><span class="state-label">Statute</span><span class="state-val">Cal. Civ. Code § 1950.5</span></div>
+    <p class="state-note">Furnished units are capped at 3× monthly rent. California requires receipts for any deduction over $125. Bad faith retention can result in up to 2× the deposit in additional damages.</p>
+  </div>
+
+  <div class="state-block">
+    <h3>Florida</h3>
+    <div class="state-row"><span class="state-label">Maximum deposit</span><span class="state-val">No statutory maximum</span></div>
+    <div class="state-row"><span class="state-label">Return deadline</span><span class="state-val">15 days (no deductions) / 30 days (with deductions)</span></div>
+    <div class="state-row"><span class="state-label">Interest required</span><span class="state-val">No</span></div>
+    <div class="state-row"><span class="state-label">Statute</span><span class="state-val">Fla. Stat. § 83.49</span></div>
+    <p class="state-note">Florida has two separate deadlines depending on whether you're making deductions. If you intend to keep any portion, you must send written notice within 30 days. The deposit must be held in a separate Florida bank account.</p>
+  </div>
+
+  <div class="state-block">
+    <h3>Texas</h3>
+    <div class="state-row"><span class="state-label">Maximum deposit</span><span class="state-val">No statutory maximum</span></div>
+    <div class="state-row"><span class="state-label">Return deadline</span><span class="state-val">30 days after move-out</span></div>
+    <div class="state-row"><span class="state-label">Interest required</span><span class="state-val">No</span></div>
+    <div class="state-row"><span class="state-label">Statute</span><span class="state-val">Tex. Prop. Code § 92.101–92.109</span></div>
+    <p class="state-note">Texas is landlord-friendly compared to most states — no deposit cap, no interest requirement. However, bad faith retention is expensive: courts can award 3× the deposit amount plus $100 plus attorney fees.</p>
+  </div>
+
+  <div class="state-block">
+    <h3>Arizona</h3>
+    <div class="state-row"><span class="state-label">Maximum deposit</span><span class="state-val">1.5× monthly rent</span></div>
+    <div class="state-row"><span class="state-label">Return deadline</span><span class="state-val">14 days after move-out</span></div>
+    <div class="state-row"><span class="state-label">Interest required</span><span class="state-val">No</span></div>
+    <div class="state-row"><span class="state-label">Statute</span><span class="state-val">Ariz. Rev. Stat. § 33-1321</span></div>
+    <p class="state-note">Arizona's 14-day return deadline requires prompt action. Non-refundable fees (cleaning fees, pet fees) must be explicitly labeled as non-refundable in the lease — otherwise they're treated as part of the deposit.</p>
+  </div>
+
+  <h2>The Most Expensive Landlord Mistakes</h2>
+  <p>Based on common landlord-tenant disputes, these are the mistakes that cost landlords the most money:</p>
+  <ul>
+    <li><strong>Missing the return deadline</strong> — even by one day — often eliminates the right to make any deductions</li>
+    <li><strong>Vague deduction descriptions</strong> — "damages" isn't sufficient; you need itemized line items with dollar amounts</li>
+    <li><strong>No move-in inspection</strong> — without a signed move-in checklist, proving pre-existing damage is nearly impossible</li>
+    <li><strong>Charging for normal wear and tear</strong> — nail holes, minor scuffs, and carpet fading are not deductible in any state</li>
+    <li><strong>Mixing deposit money with personal funds</strong> — required to be separate in many states</li>
+  </ul>
+
+  <div class="callout">
+    <p><strong>Best practice:</strong> Do a walk-through with the tenant at move-in and move-out. Have them sign a dated inspection checklist with photos attached. That documentation is your only protection in a dispute.</p>
+  </div>
+
+  <div class="cta-box">
+    <h3>Check your state's exact deposit limit</h3>
+    <p>Enter your monthly rent and select your state for instant results including the legal maximum, return deadline, and interest rules.</p>
+    <a class="cta-btn" href="/index.html">Open the Calculator →</a>
+  </div>
+
+  <div class="article-nav">
+    <a class="article-link" href="/cap-rate-guide.html">📊 What Is a Good Cap Rate?</a>
+    <a class="article-link" href="/how-to-raise-rent.html">📈 How to Raise Rent Legally</a>
+    <a class="article-link" href="/rental-property-tax-deductions.html">🧾 Schedule E Tax Deductions</a>
+    <a class="article-link" href="/how-to-screen-a-tenant.html">👤 How to Screen a Tenant</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Rent<span>Ready</span></div>
+  <div class="footer-links">
+    <a class="footer-link" href="/index.html">Cap Rate Calculator</a>
+    <a class="footer-link" href="/index.html">Security Deposit Calculator</a>
+    <a class="footer-link" href="/index.html">Rent Increase Calculator</a>
+  </div>
+  <div class="footer-copy">Free tools for independent landlords. Not legal advice. Always verify state law with a local attorney.</div>
+</footer>
+</body>
+</html>

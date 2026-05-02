@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Screen a Tenant: What to Check Before Signing a Lease | RentReady</title>
+  <meta name="description" content="A practical tenant screening guide for independent landlords. Learn what to check, what questions to ask, and how to stay Fair Housing compliant." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --cream: #F7F3EE; --paper: #FDFAF6; --ink: #1A1714; --ink-mid: #4A4340; --ink-soft: #8C8077; --amber: #C8832A; --amber-lt: #F0C070; --amber-bg: #FDF3E0; --navy: #1C2B3A; --border: #E2D9CF; --red-lt: #FDEAEA; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.7; }
+    nav { background: var(--navy); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.25rem; color: #fff; text-decoration: none; }
+    .nav-logo span { color: var(--amber-lt); }
+    .nav-links { display: flex; gap: 6px; }
+    .nav-btn { color: rgba(255,255,255,0.65); font-size: 0.82rem; font-weight: 500; padding: 6px 12px; border-radius: 6px; text-decoration: none; transition: all 0.2s; }
+    .nav-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
+    .article-hero { background: var(--navy); padding: 56px 24px; text-align: center; }
+    .article-tag { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--amber-lt); margin-bottom: 16px; padding: 5px 12px; border: 1px solid rgba(200,131,42,0.3); border-radius: 100px; }
+    .article-hero h1 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(1.75rem, 4vw, 2.75rem); color: #fff; line-height: 1.2; max-width: 720px; margin: 0 auto 16px; }
+    .article-hero .meta { color: rgba(255,255,255,0.45); font-size: 0.8rem; }
+    .article-wrap { max-width: 720px; margin: 0 auto; padding: 52px 24px 80px; }
+    .article-wrap h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--ink); margin: 40px 0 14px; }
+    .article-wrap h3 { font-size: 1.05rem; font-weight: 600; color: var(--ink); margin: 28px 0 10px; }
+    .article-wrap p { font-size: 0.97rem; color: var(--ink-mid); margin-bottom: 18px; line-height: 1.8; }
+    .article-wrap ul, .article-wrap ol { margin: 0 0 18px 22px; }
+    .article-wrap li { font-size: 0.97rem; color: var(--ink-mid); margin-bottom: 8px; line-height: 1.7; }
+    .article-wrap strong { color: var(--ink); font-weight: 600; }
+    .cta-box { background: var(--navy); border-radius: 16px; padding: 28px 32px; margin: 36px 0; display: flex; flex-direction: column; gap: 14px; }
+    .cta-box h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #fff; margin: 0; }
+    .cta-box p { color: rgba(255,255,255,0.6); font-size: 0.88rem; margin: 0; }
+    .cta-btn { display: inline-block; padding: 13px 24px; background: var(--amber); color: #fff; border-radius: 10px; font-weight: 600; font-size: 0.9rem; text-decoration: none; align-self: flex-start; transition: all 0.2s; }
+    .cta-btn:hover { background: #B5731E; }
+    .callout { background: var(--amber-bg); border-left: 4px solid var(--amber); border-radius: 0 10px 10px 0; padding: 18px 22px; margin: 28px 0; }
+    .callout p { margin: 0; font-size: 0.9rem; color: var(--ink-mid); }
+    .warning { background: var(--red-lt); border-left: 4px solid #B84040; border-radius: 0 10px 10px 0; padding: 18px 22px; margin: 28px 0; }
+    .warning p { margin: 0; font-size: 0.9rem; color: var(--ink-mid); }
+    .checklist { background: var(--paper); border: 1px solid var(--border); border-radius: 14px; padding: 24px 26px; margin: 24px 0; }
+    .checklist h3 { font-size: 0.95rem; font-weight: 700; color: var(--ink); margin: 0 0 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .check-item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; color: var(--ink-mid); }
+    .check-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .check-box { width: 18px; height: 18px; border: 2px solid var(--border); border-radius: 4px; flex-shrink: 0; margin-top: 1px; }
+    .data-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.85rem; border-radius: 12px; overflow: hidden; }
+    .data-table th { background: var(--navy); color: #fff; padding: 11px 14px; text-align: left; font-weight: 600; font-size: 0.78rem; }
+    .data-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--ink-mid); background: var(--paper); }
+    .data-table tr:last-child td { border-bottom: none; }
+    .article-nav { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
+    .article-link { display: flex; align-items: center; gap: 8px; padding: 12px 18px; background: var(--paper); border: 1px solid var(--border); border-radius: 10px; font-size: 0.82rem; font-weight: 500; color: var(--ink-mid); text-decoration: none; transition: all 0.2s; }
+    .article-link:hover { border-color: var(--amber); color: var(--amber); background: var(--amber-bg); }
+    footer { background: var(--ink); padding: 40px 24px; text-align: center; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.2rem; color: #fff; margin-bottom: 16px; }
+    .footer-logo span { color: var(--amber-lt); }
+    .footer-links { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+    .footer-link { color: rgba(255,255,255,0.6); padding: 7px 14px; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; font-size: 0.8rem; text-decoration: none; }
+    .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+    @media (max-width: 600px) { .article-wrap { padding: 32px 16px 60px; } .nav-btn { font-size: 0.72rem; padding: 6px 8px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/index.html">Rent<span>Ready</span></a>
+  <div class="nav-links">
+    <a class="nav-btn" href="/index.html">Calculators</a>
+    <a class="nav-btn" href="/cap-rate-guide.html">Cap Rate</a>
+    <a class="nav-btn" href="/security-deposit-laws.html">Deposits</a>
+  </div>
+</nav>
+
+<div class="article-hero">
+  <div class="article-tag">Tenant Management</div>
+  <h1>How to Screen a Tenant: What to Check Before Signing a Lease</h1>
+  <div class="meta">By RentReady · Tenant Screening Guide</div>
+</div>
+
+<div class="article-wrap">
+
+  <p>Choosing the wrong tenant is the single most expensive mistake a landlord can make. A bad eviction costs $3,000–$10,000 in legal fees, lost rent, and repairs — and takes months. A thorough screening process, applied consistently to every applicant, is your best protection. Here's how to do it right.</p>
+
+  <h2>Set Your Criteria Before You Start</h2>
+  <p>The most important step in tenant screening happens before you show the unit. Write down your minimum criteria and apply them consistently to every applicant. This protects you legally under Fair Housing law — you're rejecting based on objective criteria, not subjective impressions.</p>
+  <p>Typical minimum criteria include:</p>
+  <ul>
+    <li><strong>Income:</strong> Gross monthly income at least 2.5–3× the monthly rent</li>
+    <li><strong>Credit score:</strong> Minimum threshold (620–650 is common for independent landlords)</li>
+    <li><strong>Rental history:</strong> No evictions in the past 5 years</li>
+    <li><strong>Criminal history:</strong> Based on local laws — some jurisdictions restrict how this can be used</li>
+    <li><strong>Employment:</strong> Stable employment or verifiable income source</li>
+  </ul>
+
+  <div class="warning">
+    <p><strong>Fair Housing reminder:</strong> Federal law prohibits discrimination based on race, color, national origin, religion, sex, familial status, and disability. Many states and cities add additional protected classes. Apply the same screening criteria to every applicant and document your decisions.</p>
+  </div>
+
+  <h2>The Five-Step Screening Process</h2>
+
+  <h3>1. Pre-screen on the phone or by message</h3>
+  <p>Before showing the unit, ask a few basic questions: When are you looking to move? How many people will be living in the unit? Do you have pets? What is your monthly income? This filters out applicants who are clearly not a fit before you invest time in a showing.</p>
+
+  <h3>2. Collect a written application</h3>
+  <p>Every serious applicant should complete a rental application that includes full legal name, current and previous addresses, employment information and income, references, and authorization to run a credit and background check. Never skip the written application — it's your legal basis for the screening decisions you make.</p>
+
+  <h3>3. Verify income</h3>
+  <p>Don't take an applicant's word for their income. Ask for the two most recent pay stubs, or for self-employed applicants, two years of tax returns. Bank statements for the past two months are also useful. The 3× income rule is a reasonable standard — a tenant paying more than one-third of their gross income in rent is at higher risk of payment issues.</p>
+
+  <h3>4. Run a credit and background check</h3>
+  <p>A credit check reveals payment history, outstanding debt, and any prior eviction judgments. A background check surfaces criminal history. Services like TransUnion SmartMove allow landlords to request that applicants pay for their own report — which is both cost-effective and common practice.</p>
+
+  <div class="cta-box">
+    <h3>Run a tenant screening report through TransUnion SmartMove</h3>
+    <p>Credit, criminal, and eviction history — the applicant pays directly, you get the report instantly. The most widely used screening service for independent landlords.</p>
+    <a class="cta-btn" href="https://www.mysmartmove.com" target="_blank" rel="noopener">Screen a Tenant →</a>
+  </div>
+
+  <h3>5. Call previous landlords</h3>
+  <p>This is the step most landlords skip — and the one that tells you the most. Call the previous landlord listed on the application and ask: Did this tenant pay rent on time? Would you rent to them again? Did they give proper notice before moving? Did they leave the unit in good condition? A landlord's hesitation or vague answers tells you as much as what they actually say.</p>
+
+  <div class="callout">
+    <p><strong>Pro tip:</strong> Call the landlord before the one listed. A current landlord who wants a difficult tenant to leave has incentive to give a positive reference. The previous landlord has nothing to gain either way.</p>
+  </div>
+
+  <h2>Tenant Screening Checklist</h2>
+
+  <div class="checklist">
+    <h3>Before Showing</h3>
+    <div class="check-item"><div class="check-box"></div><span>Written screening criteria defined and documented</span></div>
+    <div class="check-item"><div class="check-box"></div><span>Phone pre-screen completed</span></div>
+    <div class="check-item"><div class="check-box"></div><span>Application form ready to send or collect</span></div>
+  </div>
+
+  <div class="checklist">
+    <h3>Application Review</h3>
+    <div class="check-item"><div class="check-box"></div><span>Written application received and signed</span></div>
+    <div class="check-item"><div class="check-box"></div><span>Income verified with pay stubs or tax returns</span></div>
+    <div class="check-item"><div class="check-box"></div><span>Employment confirmed (called employer directly)</span></div>
+    <div class="check-item"><div class="check-box"></div><span>Credit report reviewed</span></div>
+    <div class="check-item"><div class="check-box"></div><span>Background check reviewed</span></div>
+    <div class="check-item"><div class="check-box"></div><span>Eviction history checked</span></div>
+    <div class="check-item"><div class="check-box"></div><span>Previous landlord called (the one before the current one)</span></div>
+    <div class="check-item"><div class="check-box"></div><span>Decision documented with reason</span></div>
+  </div>
+
+  <h2>What to Do When You Reject an Applicant</h2>
+  <p>When you reject an applicant based on a credit or background report, federal law (the Fair Credit Reporting Act) requires you to send an adverse action notice. This notice must explain that you used a consumer report in your decision, name the reporting company, and advise the applicant of their right to get a free copy of their report. Screening services like SmartMove automate this process for you.</p>
+  <p>Keep a file on every applicant — accepted or rejected — for at least three years. If a Fair Housing complaint is ever filed against you, documentation of your consistent, criteria-based process is your defense.</p>
+
+  <h2>Red Flags to Watch For</h2>
+  <ul>
+    <li>Reluctance to provide references or authorize a credit check</li>
+    <li>Income that can't be verified with documentation</li>
+    <li>Gaps in rental history with vague explanations</li>
+    <li>Wanting to move in immediately with a long-term lease</li>
+    <li>Paying the deposit in cash without a clear reason</li>
+    <li>A previous landlord who says they'd "prefer not to comment"</li>
+  </ul>
+
+  <div class="article-nav">
+    <a class="article-link" href="/cap-rate-guide.html">📊 What Is a Good Cap Rate?</a>
+    <a class="article-link" href="/security-deposit-laws.html">🔒 Security Deposit Laws by State</a>
+    <a class="article-link" href="/how-to-raise-rent.html">📈 How to Raise Rent Legally</a>
+    <a class="article-link" href="/rental-property-tax-deductions.html">🧾 Schedule E Tax Deductions</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Rent<span>Ready</span></div>
+  <div class="footer-links">
+    <a class="footer-link" href="/index.html">Cap Rate Calculator</a>
+    <a class="footer-link" href="/index.html">Security Deposit Calculator</a>
+    <a class="footer-link" href="/index.html">Rent Increase Calculator</a>
+  </div>
+  <div class="footer-copy">Free tools for independent landlords. Not legal advice. Consult an attorney for Fair Housing compliance in your state.</div>
+</footer>
+</body>
+</html>

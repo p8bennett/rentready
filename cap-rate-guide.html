@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is a Good Cap Rate for Rental Property? | RentReady</title>
+  <meta name="description" content="Learn what cap rate means, how to calculate it, and what counts as a good cap rate for rental property in today's market. Includes free calculator." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cream: #F7F3EE; --paper: #FDFAF6; --ink: #1A1714; --ink-mid: #4A4340;
+      --ink-soft: #8C8077; --amber: #C8832A; --amber-lt: #F0C070; --amber-bg: #FDF3E0;
+      --navy: #1C2B3A; --border: #E2D9CF; --shadow: rgba(26,23,20,0.08);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--ink); line-height: 1.7; }
+    nav { background: var(--navy); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.25rem; color: #fff; letter-spacing: -0.02em; text-decoration: none; }
+    .nav-logo span { color: var(--amber-lt); }
+    .nav-links { display: flex; gap: 6px; }
+    .nav-btn { color: rgba(255,255,255,0.65); font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 500; padding: 6px 12px; border-radius: 6px; text-decoration: none; transition: all 0.2s; }
+    .nav-btn:hover { color: #fff; background: rgba(255,255,255,0.1); }
+    .article-hero { background: var(--navy); padding: 56px 24px; text-align: center; }
+    .article-tag { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--amber-lt); margin-bottom: 16px; padding: 5px 12px; border: 1px solid rgba(200,131,42,0.3); border-radius: 100px; }
+    .article-hero h1 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(1.75rem, 4vw, 2.75rem); color: #fff; line-height: 1.2; letter-spacing: -0.03em; max-width: 720px; margin: 0 auto 16px; }
+    .article-hero .meta { color: rgba(255,255,255,0.45); font-size: 0.8rem; }
+    .article-wrap { max-width: 720px; margin: 0 auto; padding: 52px 24px 80px; }
+    .article-wrap h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--ink); margin: 40px 0 14px; line-height: 1.25; }
+    .article-wrap h3 { font-size: 1.05rem; font-weight: 600; color: var(--ink); margin: 28px 0 10px; }
+    .article-wrap p { font-size: 0.97rem; color: var(--ink-mid); margin-bottom: 18px; line-height: 1.8; }
+    .article-wrap ul, .article-wrap ol { margin: 0 0 18px 22px; }
+    .article-wrap li { font-size: 0.97rem; color: var(--ink-mid); margin-bottom: 8px; line-height: 1.7; }
+    .article-wrap strong { color: var(--ink); font-weight: 600; }
+    .cta-box { background: var(--navy); border-radius: 16px; padding: 28px 32px; margin: 36px 0; display: flex; flex-direction: column; gap: 14px; }
+    .cta-box h3 { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #fff; margin: 0; }
+    .cta-box p { color: rgba(255,255,255,0.6); font-size: 0.88rem; margin: 0; line-height: 1.6; }
+    .cta-btn { display: inline-block; padding: 13px 24px; background: var(--amber); color: #fff; border-radius: 10px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: all 0.2s; align-self: flex-start; }
+    .cta-btn:hover { background: #B5731E; }
+    .callout { background: var(--amber-bg); border-left: 4px solid var(--amber); border-radius: 0 10px 10px 0; padding: 18px 22px; margin: 28px 0; }
+    .callout p { margin: 0; font-size: 0.9rem; color: var(--ink-mid); }
+    .data-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.88rem; border-radius: 12px; overflow: hidden; }
+    .data-table th { background: var(--navy); color: #fff; padding: 11px 14px; text-align: left; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.04em; }
+    .data-table td { padding: 11px 14px; border-bottom: 1px solid var(--border); color: var(--ink-mid); background: var(--paper); }
+    .data-table tr:last-child td { border-bottom: none; }
+    .article-nav { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
+    .article-link { display: flex; align-items: center; gap: 8px; padding: 12px 18px; background: var(--paper); border: 1px solid var(--border); border-radius: 10px; font-size: 0.82rem; font-weight: 500; color: var(--ink-mid); text-decoration: none; transition: all 0.2s; }
+    .article-link:hover { border-color: var(--amber); color: var(--amber); background: var(--amber-bg); }
+    footer { background: var(--ink); padding: 40px 24px; text-align: center; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.2rem; color: #fff; margin-bottom: 16px; }
+    .footer-logo span { color: var(--amber-lt); }
+    .footer-links { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px; }
+    .footer-link { color: rgba(255,255,255,0.6); padding: 7px 14px; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; font-size: 0.8rem; text-decoration: none; transition: all 0.2s; }
+    .footer-link:hover { color: #fff; }
+    .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,0.3); }
+    @media (max-width: 600px) { .article-wrap { padding: 32px 16px 60px; } .nav-btn { font-size: 0.72rem; padding: 6px 8px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="/index.html">Rent<span>Ready</span></a>
+  <div class="nav-links">
+    <a class="nav-btn" href="/index.html">Calculators</a>
+    <a class="nav-btn" href="/security-deposit-laws.html">Deposits</a>
+    <a class="nav-btn" href="/how-to-raise-rent.html">Rent Increase</a>
+  </div>
+</nav>
+
+<div class="article-hero">
+  <div class="article-tag">Rental Property Analysis</div>
+  <h1>What Is a Good Cap Rate for Rental Property?</h1>
+  <div class="meta">By RentReady · Landlord Finance Guide</div>
+</div>
+
+<div class="article-wrap">
+
+  <p>Cap rate is the single most widely used metric for evaluating rental property returns. Every serious real estate investor knows it, most landlords use it, and yet it's consistently misunderstood — especially when it comes to what actually counts as "good." The answer, frustratingly, is: it depends on the market. But there are clear benchmarks worth knowing.</p>
+
+  <div class="cta-box">
+    <h3>Skip the math — use our free Cap Rate Calculator</h3>
+    <p>Enter your purchase price, rent, and expenses to get your NOI, cap rate, and cash-on-cash return instantly.</p>
+    <a class="cta-btn" href="/index.html">Calculate My Cap Rate →</a>
+  </div>
+
+  <h2>What Is Cap Rate?</h2>
+  <p>Cap rate — short for capitalization rate — measures the annual return a property would generate if you paid for it entirely in cash. The formula is straightforward: divide your Net Operating Income (NOI) by the purchase price, then multiply by 100 to get a percentage.</p>
+  <p><strong>Cap Rate = (Annual NOI ÷ Purchase Price) × 100</strong></p>
+  <p>Net Operating Income is your annual rental income minus all operating expenses — property taxes, insurance, maintenance, property management fees, and a vacancy allowance. It does not include your mortgage payment, which is why cap rate is considered a property-level metric rather than an investor-level one.</p>
+
+  <h2>What Is a Good Cap Rate?</h2>
+  <p>The honest answer is that cap rate benchmarks vary significantly by market. A cap rate that looks thin in Memphis might be outstanding in San Francisco. That said, here are the general thresholds most experienced landlords use:</p>
+
+  <table class="data-table">
+    <thead>
+      <tr><th>Cap Rate</th><th>Interpretation</th><th>Typical Markets</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Below 4%</td><td>Thin — appreciation play</td><td>NYC, SF, LA, Boston</td></tr>
+      <tr><td>4% – 6%</td><td>Moderate — stable cash flow</td><td>Denver, Seattle, Austin</td></tr>
+      <tr><td>6% – 8%</td><td>Strong — solid returns</td><td>Atlanta, Charlotte, Phoenix</td></tr>
+      <tr><td>8% – 10%+</td><td>High yield — higher risk</td><td>Midwest, rural markets</td></tr>
+    </tbody>
+  </table>
+
+  <p>A cap rate of 5–7% is generally considered the sweet spot for most landlords balancing cash flow and long-term appreciation. Below 4% makes sense only if you're buying in a high-appreciation gateway market where property values are expected to grow significantly over time.</p>
+
+  <div class="callout">
+    <p><strong>Key insight:</strong> A higher cap rate is not always better. Very high cap rates (10%+) often signal a struggling local economy, high vacancy rates, or deferred maintenance — factors that increase your risk significantly.</p>
+  </div>
+
+  <h2>Cap Rate vs. Cash-on-Cash Return</h2>
+  <p>These two metrics are frequently confused. Cap rate assumes an all-cash purchase. Cash-on-cash return measures your actual annual cash flow as a percentage of the cash you invested — meaning it accounts for your mortgage payment.</p>
+  <p>If you put $70,000 down on a property and your annual cash flow after the mortgage is $4,200, your cash-on-cash return is 6% — regardless of what the cap rate is. For leveraged buyers, cash-on-cash is often the more useful number day to day.</p>
+  <p>Use cap rate to compare properties on equal footing. Use cash-on-cash to understand what your actual invested dollars are earning.</p>
+
+  <h2>What Expenses Go Into NOI?</h2>
+  <p>Getting your NOI right is where most beginner landlords go wrong. Common expenses to include:</p>
+  <ul>
+    <li><strong>Property taxes</strong> — annual amount divided by 12</li>
+    <li><strong>Landlord insurance</strong> — not the same as homeowner's insurance</li>
+    <li><strong>Maintenance and repairs</strong> — budget 1% of the property value per year as a baseline</li>
+    <li><strong>Property management fees</strong> — typically 8–12% of collected rent if you use a manager</li>
+    <li><strong>Vacancy allowance</strong> — most markets assume 5–8% of annual rent</li>
+    <li><strong>HOA fees</strong> — if applicable</li>
+  </ul>
+  <p>Mortgage principal and interest are intentionally excluded from NOI. That's what separates cap rate from cash-on-cash return.</p>
+
+  <h2>How to Use Cap Rate When Buying</h2>
+  <p>Cap rate is most useful as a comparison tool. When evaluating multiple properties, calculating the cap rate for each lets you compare them on equal footing regardless of financing. It also helps you quickly screen out deals that won't pencil before you spend time on due diligence.</p>
+  <p>One practical approach: know the prevailing cap rate in your target market before you start shopping. If most comparable properties trade at 6%, a listing priced at a 4% cap rate is expensive relative to the market — unless the seller has a compelling reason for the premium.</p>
+
+  <div class="cta-box">
+    <h3>Run the numbers on your next rental property</h3>
+    <p>Our free calculator handles NOI, cap rate, and cash-on-cash return. Takes 60 seconds.</p>
+    <a class="cta-btn" href="/index.html">Open the Calculator →</a>
+  </div>
+
+  <h2>The Bottom Line</h2>
+  <p>A good cap rate for rental property is one that makes sense for your market, your risk tolerance, and your investment goals. For most independent landlords buying in mid-tier US markets, a cap rate between 6–8% represents a solid deal with healthy cash flow and manageable risk. Below 4% requires a strong appreciation thesis. Above 10% requires careful due diligence on why the yield is so high.</p>
+  <p>Always calculate cap rate before making an offer — and always double-check your expense assumptions. Optimistic maintenance and vacancy figures are the most common reason a deal looks better on paper than it performs in reality.</p>
+
+  <div class="article-nav">
+    <a class="article-link" href="/security-deposit-laws.html">🔒 Security Deposit Laws by State</a>
+    <a class="article-link" href="/how-to-raise-rent.html">📈 How to Raise Rent Legally</a>
+    <a class="article-link" href="/rental-property-tax-deductions.html">🧾 Schedule E Tax Deductions</a>
+    <a class="article-link" href="/how-to-screen-a-tenant.html">👤 How to Screen a Tenant</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Rent<span>Ready</span></div>
+  <div class="footer-links">
+    <a class="footer-link" href="/index.html">Cap Rate Calculator</a>
+    <a class="footer-link" href="/index.html">Security Deposit Calculator</a>
+    <a class="footer-link" href="/index.html">Rent Increase Calculator</a>
+  </div>
+  <div class="footer-copy">Free tools for independent landlords. Not legal or financial advice. Always verify with a local professional.</div>
+</footer>
+</body>
+</html>
